@@ -44,6 +44,8 @@
             if (people == dogs)
             {
                 Console.WriteLine("people are dogs.");
+
+                //Almost finished
             }
 
         }   
