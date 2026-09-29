@@ -7,7 +7,7 @@
             //To satisfy: "Change the values of the variables so that neither message about cats is printed."
             // Setting people and cats to equal values (20) means neither (people < cats) nor (people > cats) evaluates to true.
             int people = 20;
-            int cats = 30;
+            int cats = 20;
             int dogs = 15;
 
             Console.WriteLine("People: " + people + "Dogs: " + dogs + "Cats: " + cats);
@@ -74,8 +74,38 @@
                 {
                     Console.WriteLine("You can't drive, " + name + ".");
                 }
+                if (age < 18)
+                {
+                    Console.WriteLine("You can't vote, " + name + ".");
+                }
+                if (age < 25)
+                {
+                    Console.WriteLine("you can't rent a car, " + name + ".");
+                }
+                if (age >= 25)
+                {
+                    Console.WriteLine("you can do anything that's legal.");
+                }
 
+                // Task 3
+                int temperature;
+                Console.Write("Enter the freezing temperature: ");
+                int.TryParse (Console.ReadLine(), out temperature);
 
+                if (temperature == 0)
+                {
+                    Console.WriteLine("Ahh, yes 0 degrees celsius is correct.");
+                }
+                if (temperature == 32)
+                {
+                    Console.WriteLine("Ahh, yes 32 degreees Farenheit is correct.");
+                }
+                if (temperature == 273)
+                {
+                    Console.WriteLine("Ahh, yes 273.2 degrees kelvin to be precise is correct.");
+                }
+
+                Console.ReadLine();
 
             }
 
